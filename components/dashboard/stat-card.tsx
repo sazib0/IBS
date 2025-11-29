@@ -28,6 +28,7 @@ export function StatCard({
   value, 
   icon: Icon, 
   trend, 
+  trendValue, 
   chartData = data 
 }: StatCardProps) {
   const TrendIcon = trend === "up" ? 
@@ -53,7 +54,7 @@ export function StatCard({
           </div>
         </div>
         <div className="h-16 w-24">
-          <ResponsiveCntainer width="100%" height="100%">
+          <ResponsiveContainer width="100%" height="100%">
             <LineChart data={chartData}>
               <Line
                 type="monotone"
@@ -63,7 +64,7 @@ export function StatCard({
                 dot={false}
               />
             </LineChart>
-          </ResponsiveCntainer>
+          </ResponsiveContainer>
         </div>
       </div>
     </Card>

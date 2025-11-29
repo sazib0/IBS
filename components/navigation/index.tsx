@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { navigationItems } from "./items";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LayoutDashboard } from "lucide-react";
 
